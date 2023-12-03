@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+
+    }
+
+    #todo-list {
+      width: 50%;
+      margin: 200px auto;
+    }
+
+
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      border: 1px solid black;
+      margin-bottom: 5px;
+    }
+    input{
+      width: 80%;
+      padding: 5px;
+      text-align: center;
+      font-size: larger;
+    }
+    .todo-item button{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.todo-item button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+
+
+  </style>
+  <title>To-Do List</title>
+</head>
+<body>
+
+  <div id="todo-list">
+    <div class="todo-item">
+      <input placeholder="Write the tasks here">
+      <button onclick="AddTask(this)">Add</button>
+    </div>
+    <div class="todo-item">
+      <span>Task 1</span>
+      <button onclick="editTask">Edit</button>
+      <button onclick="deleteTask">Delete</button>
+    </div>
+    <div class="todo-item">
+      <span>Task 2</span>
+      <button onclick="editTask">Edit</button>
+      <button onclick="deleteTask">Delete</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
